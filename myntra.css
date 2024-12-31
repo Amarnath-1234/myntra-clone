@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aquamarine; */
+}
+
+nav{
+    width: 100%;
+    height: 13.5%;
+    display: flex;
+    box-shadow: 3px 3px 3px 3px #f4f4f5;
+    /* border-bottom: 1px solid black; */
+    /* background-color: red; */
+}
+
+.leftnav{
+    width:10%;
+    height: 100%;
+    padding-left: 50px;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+.leftnav>img{
+    width: 54px ;
+    height: 38px;
+}
+.middlenav{
+    width: 42%;
+    height: 100%;
+    /* background-color: #6fff00; */
+    display: flex;
+    margin-right: 20px;
+}
+.middlenav>ul{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #323131;
+    justify-content: space-around;
+}
+.hide{
+    width: 85%;
+    height: 70%;
+    top: 13.5%;
+    left: 6%;
+    position: absolute;
+    display: none;
+    background-color: #e0dddd;
+}
+.middlenav :nth-child(2n):hover+.hide{
+    display: block;
+}
+.middlenav :nth-child(2n+1):hover+.hide{
+    display: block;
+}
+.hide2{
+    width: 40%;
+    height: 70%;
+    top: 13.5%;
+    left: 30%;
+    position: absolute;
+    display: none;
+    background-color: #e0dddd;
+}
+#studio:hover+.hide2{
+    display: block;
+}
+
+.rightnav{
+    width:48%;
+    height: 100%;
+    padding-left: 10px;
+    /* background-color: blue; */
+    display: flex;
+}
+.search{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    /* border: none; */
+}
+.rightnav>.search>input[type=text]{
+    width: 97%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f3f1f1;
+    border:2px solid #f3f1f1;
+    border-radius: 5px;
+    background-image: url('searchicon.svg');
+    background-position: 20px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.rightnav>.rest{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 20px;
+}
+.rest p{
+    font-size: 11px;
+    font-weight: bold;
+}
+#profile{
+    text-align: center;
+}
+#wish{
+    text-align: center;
+}
+#bag{
+    text-align: center;
+}
